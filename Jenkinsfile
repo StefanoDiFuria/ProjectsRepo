@@ -11,5 +11,10 @@ pipeline {
         bat 'mvn clean install -f ./gs-maven/pom.xml'
       }
     }
+    stage('Sonar Analysis') {
+      steps {
+        bat 'mvn sonar:sonar'
+      }
+    }
   }
 }
