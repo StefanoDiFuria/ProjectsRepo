@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'cd gs-maven;mvn clean install;'
+        sh 'cd gs-maven'
       }
     }
   }
