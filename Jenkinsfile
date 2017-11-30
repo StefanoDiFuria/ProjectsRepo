@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Sonar Analysis') {
       steps {
-        bat 'mvn sonar:sonar'
+        bat 'mvn sonar:sonar -f ./gs-maven/pom.xml'
       }
     }
   }
