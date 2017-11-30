@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'cd gs-maven'
+        sh 'mvn clean install -f ./gs-maven/pom.xml'
       }
     }
   }
